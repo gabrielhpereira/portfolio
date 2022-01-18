@@ -102,16 +102,24 @@ body {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 666px) {
   body {
-    background-attachment: initial;
-    background-size: contain;
-    background-color: #f0e6da;
+    font-family: "Source Code Pro", monospace;
+    background: url("../img/bg3.jpg") no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    color: #000000;
   }
   .box {
-    padding: 2rem;
+    padding: 0rem;
     margin-top: 4rem;
-    border-radius: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+	overflow-wrap: break-word;
   }
   .box:first-child {
     padding: 3rem;
@@ -124,12 +132,12 @@ body {
     justify-items: center;
   }
   .portfolio li div {
-    max-width: 448px;
+    max-width: 450px;
   }
 }
 a:link, a:visited {
   padding: 10px 10px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   display: inline-block;
 }
